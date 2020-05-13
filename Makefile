@@ -4,7 +4,7 @@ all: presentation.pdf
 	pandoc -t beamer+smart --pdf-engine xelatex --syntax-definition kotlin.xml --highlight-style highlight.theme $< -o $@
 
 %.tex: %.md
-	pandoc -t beamer+smart --pdf-engine xelatex --syntax-definition kotlin.xml --highlight-style highlight.theme $< -o $@
+	pandoc --standalone -t beamer+smart --pdf-engine xelatex --syntax-definition kotlin.xml --highlight-style highlight.theme $< -o $@
 
 clean:
 	rm -f presentation.pdf
