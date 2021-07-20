@@ -39,6 +39,8 @@ header-includes:
 
 Рассмотрим цикл:
 
+
+
 ```kotlin
 var x = 0
 var y = 2
